@@ -1,0 +1,271 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "Montserrat", sans-serif;
+}
+
+.container {
+    display: grid;
+    /* take space as much as header needs, take space as much as leave main-con, the same as header */
+    grid-template-rows: 1fr;
+    height: 100vh;
+} 
+
+.main-content {
+    display: grid;
+    grid-template-columns: 320px 1fr;
+
+    transition: all 0.3s ease-out;
+}
+
+.menu-closed {
+    display: grid;
+    grid-template-columns: 0px 1fr;
+}
+
+.left-section {
+    display: flex;
+    flex-direction: column;
+    background-color: #000000;
+    overflow: hidden;
+}
+
+#xmark {
+    padding: 20px 15px 0px 15px;    
+    color: #dcdcdc;
+}
+
+.topMenu-container {
+    display: flex;
+    justify-content: center;
+
+    padding: 30px 10px 30px 10px;
+}
+
+#logo-pic-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    font-size: 2rem;
+    padding: 0px 25px 0px 25px;
+    color: #f5a614;
+}
+
+.topMenu-information p{
+    color: #cbcbcb;
+    font-size: 0.8rem;
+    font-weight: 500;
+    line-height: 1.5rem;
+}
+
+.topMenu-information h2 {
+    color: #ffffff;
+    font-size: 1.3rem;
+    font-weight: 600;
+}
+
+ul {
+    padding: 20px 15px 0 15px;
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    
+    padding: 15px 15px 15px 15px;
+    color: white;
+    font-size: 1.1rem;
+    font-weight: 400;
+    gap: 25px;
+    transition: all 0.3s ease;
+}
+
+a:hover {
+    background-color: #aa6f00;
+    border-radius: 5px;
+}
+
+i {
+    cursor: pointer;
+    width: 20px;
+    text-align: center;
+    color: white;
+    font-size: 1.3rem;
+}
+
+.social-media {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-top: auto;
+    padding: 0 0 70px 0;
+}
+
+.social-media i {
+    color: #cbcbcb;
+}
+
+.right-section {
+    width: 100%;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 80px;
+    padding: 0 35px 0 35px;
+    
+    color: white;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0 0px 2px 0px rgba(0, 0, 0, 0.3);
+}
+
+#bars-icon {
+    font-size: 1.5rem;
+}
+
+#bars-icon, #shoppingCart-icon, #search-icon {
+    color: black;
+}
+
+.navbarRight-icons i{
+    padding: 0 30px;
+}
+
+.hero-container {
+    padding: 0 45px;     
+}
+
+.hero {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    min-height: 40vh;
+    
+    box-shadow: 0px 7px 15px 5px rgba(0, 0, 0, 0.3);
+    background-repeat: no-repeat;
+    background-position: left;
+    background-image: url(images/hero.jpg);
+}
+
+.hero-container h3 {
+    color: #aa6f00;;
+    font-weight: 700;
+    font-size: 1.2rem;
+}
+ 
+.hero-container h1 {
+    max-width: 340px;
+    font-size: 2.5rem;
+    padding: 15px 0 0 0;
+}
+
+.hero-container p {
+    /* width: 340px; */
+    max-width: 340px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #707070;
+    padding: 15px 0 20px 0;
+}
+
+.btn button{
+    background-color: #aa6f00;
+    border: none;
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: white;
+    border-radius: 8px;
+    padding: 15px 28px;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+}
+
+
+.btn:active {
+    transform: translateY(2px);
+}
+
+.menu-header{
+    padding: 15px 45px 0 45px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.menu-header h4 {
+    color: #aa6f00;
+    font-size: 1.1rem;
+    font-weight: 700;
+    cursor: pointer;     
+}
+
+.menu-header h2 {
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+.cards-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    padding: 15px 40px 15px 40px;
+    gap: 25px;
+}
+
+.card {
+    border-radius: 15px;
+    box-shadow: 0 4px 5px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+}
+
+.card img {
+    border-radius: 10px;
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+}
+
+.card-information{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    height: 150px;
+    padding: 10px;
+}
+
+.product-name {
+    font-size: 1.2rem;
+    font-weight: 700;
+}
+
+.card-information h3 {
+    line-height: 3rem;
+}
+
+.description-product {
+    color: #707070;
+    font-weight: 600;
+    max-width: 200px;
+    width: 100%;
+    line-height: 1.5rem;
+}
+
+.price {
+    color: #aa6f00;
+    font-size: 1.2rem;
+    font-weight: 700;
+}
+
+
+
+
+
+
